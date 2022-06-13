@@ -1,0 +1,62 @@
+@use '../globals/' as *;
+
+.Dashboard__Heading {
+    height: 23.5rem;
+    background-color: var(--bg-top);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.Heading__text,
+.Heading__toggle--label {
+    font-size: var(--fs-subtitle-mobile);
+    font-weight: var(--fw-bold);
+    color: var(--clr-small-text);
+}
+
+.Heading__toggle--label {
+    @media (min-width: $desktop) {
+        color: hsl(230, 22%, 74%);
+    }
+}
+
+.Heading__toggle {
+    position: relative;
+    width: 4.8rem;
+    height: 2.4rem;
+    border-radius: 1.4rem;
+    background: linear-gradient(to right, var(--clr-toggle1), var(--clr-toggle2));
+    cursor: pointer;
+}
+
+body.lightTheme .Heading__toggle:hover {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.Heading__toggle--dot-left,
+.Heading__toggle--dot-right {
+    position: absolute;
+    top: 0.3rem; 
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.Heading__toggle--dot-left {
+    left: 0.3rem;
+    background-color: hsl(228, 28%, 20%);
+}
+
+.Heading__toggle--dot-right {
+    right: 0.3rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.Heading__toggle:hover~.Heading__toggle--label {
+    color: hsl(0, 0%, 100%);;
+} 
+
+body.lightTheme .Heading__toggle:hover~.Heading__toggle--label {
+    color:hsl(228, 34%, 66%);
+} 

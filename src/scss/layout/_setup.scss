@@ -1,0 +1,28 @@
+@use '../globals' as *;
+
+body {
+    @include flex-center;
+    flex-direction: column;
+    
+    //min-height: 100vh;
+    font-family: var(--ff);
+    font-weight: var(--fw-regular);
+    //font-size: var(--fs-normal-mobile);
+    background-color: var(--bg-bottom);
+
+    @media (min-width: $desktop) {
+        //font-size: var(--fs-normal-desktop);
+    }
+}
+
+.App {
+    width: 37.5rem;
+    background-color: var(--bg-bottom);
+
+    border: 1px solid red;
+
+    @media (min-width: $desktop) {
+        //max-width: 144rem;
+        width: 144rem;
+    }
+}

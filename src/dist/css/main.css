@@ -1,0 +1,199 @@
+:root {
+  --clr-lime-green: hsl(163, 72%, 41%);
+  --clr-bright-red: hsl(356, 69%, 56%);
+  --clr-facebook: hsl(208, 92%, 53%);
+  --clr-twitter: hsl(203, 89%, 53%);
+  --clr-instagram1: hsl(37, 97%, 70%);
+  --clr-instagram2: hsl(329, 70%, 58%);
+  --clr-instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --clr-youTube: hsl(348, 97%, 39%);
+  --clr-toggle1: hsl(210, 78%, 56%);
+  --clr-toggle2: hsl(146, 68%, 55%);
+  --bg-bottom: hsl(230, 17%, 14%);
+  --bg-top: hsl(232, 19%, 15%);
+  --bg-card: hsl(228, 28%, 20%);
+  --clr-small-text: hsl(228, 34%, 66%);
+  --clr-text: hsl(0, 0%, 100%);
+  --clr-bs: hsla(256, 26%, 20%, 0.6);
+}
+
+.lightTheme {
+  --clr-toggle1: hsl(230, 22%, 74%);
+  --clr-toggle2: hsl(230, 22%, 74%);
+  --bg-bottom: hsl(0, 0%, 100%);
+  --bg-top: hsl(0, 0%, 100%);
+  --bg-card: hsl(227, 47%, 96%);
+  --clr-small-text: hsl(228, 12%, 44%);
+  --clr-text: hsl(230, 17%, 14%);
+}
+
+/*
+### Primary
+
+- Lime Green: hsl(163, 72%, 41%)
+- Bright Red: hsl(356, 69%, 56%)
+
+- Facebook: hsl(208, 92%, 53%)
+- Twitter: hsl(203, 89%, 53%)
+- Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+- YouTube: hsl(348, 97%, 39%)
+
+#### Dark Theme
+
+- Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+
+#### Light Theme
+
+- Toggle: hsl(230, 22%, 74%)
+
+### Neutral
+
+#### Dark Theme
+
+- Very Dark Blue (BG): hsl(230, 17%, 14%)
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+- Desaturated Blue (Text): hsl(228, 34%, 66%)
+- White (Text): hsl(0, 0%, 100%)
+
+#### Light Theme
+
+- White (BG): hsl(0, 0%, 100%)
+- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+- Very Dark Blue (Text): hsl(230, 17%, 14%)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --ff: "Inter", sans-serif;
+  --fs-subtitle-mobile: 1.4rem;
+  --fs-normal-mobile: 1.6rem;
+  --fs-nav-mobile: 1.9rem;
+  --fs-h1-mobile: 4.8rem;
+  --fs-h2-mobile: 3.8rem;
+  --fs-h3-mobile: 2.8rem;
+  --fs-button-mobile: 1.3rem;
+  --fs-footer-mobile: 1.3rem;
+  --fs-normal-desktop: 1.4rem;
+  --fs-nav-desktop: 1.4rem;
+  --fs-h1-desktop: 7.1rem;
+  --fs-h2-desktop: 5.5rem;
+  --fs-footer-desktop: 1.35rem;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--ff);
+  font-weight: var(--fw-regular);
+  background-color: var(--bg-bottom);
+}
+.App {
+  width: 37.5rem;
+  background-color: var(--bg-bottom);
+  border: 1px solid red;
+}
+@media (min-width: 65em) {
+  .App {
+    width: 144rem;
+  }
+}
+
+.Dashboard__Heading {
+  height: 23.5rem;
+  background-color: var(--bg-top);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.Heading__text,
+.Heading__toggle--label {
+  font-size: var(--fs-subtitle-mobile);
+  font-weight: var(--fw-bold);
+  color: var(--clr-small-text);
+}
+
+@media (min-width: 65em) {
+  .Heading__toggle--label {
+    color: hsl(230deg, 22%, 74%);
+  }
+}
+
+.Heading__toggle {
+  position: relative;
+  width: 4.8rem;
+  height: 2.4rem;
+  border-radius: 1.4rem;
+  background: linear-gradient(to right, var(--clr-toggle1), var(--clr-toggle2));
+  cursor: pointer;
+}
+
+body.lightTheme .Heading__toggle:hover {
+  background: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+
+.Heading__toggle--dot-left,
+.Heading__toggle--dot-right {
+  position: absolute;
+  top: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.Heading__toggle--dot-left {
+  left: 0.3rem;
+  background-color: hsl(228deg, 28%, 20%);
+}
+
+.Heading__toggle--dot-right {
+  right: 0.3rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.Heading__toggle:hover ~ .Heading__toggle--label {
+  color: hsl(0deg, 0%, 100%);
+}
+
+body.lightTheme .Heading__toggle:hover ~ .Heading__toggle--label {
+  color: hsl(228deg, 34%, 66%);
+}
+
+.attribution {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */

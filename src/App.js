@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Attribution from "./components/Attribution";
+import Main from "./components/Main";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [ lightModeOn, setLightModeOn ] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle("lightTheme");
+  }, [lightModeOn])
+  
+  function handleChangeTheme() {
+    setLightModeOn(!lightModeOn);
+  }
+
   return (
+    //<div className={lightModeOn ? "App lightTheme" : "App"}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main 
+        lightModeOn={lightModeOn}
+        setLightModeOn={setLightModeOn}
+        handleChangeTheme={handleChangeTheme}
+      />
+      <Attribution />
     </div>
   );
 }

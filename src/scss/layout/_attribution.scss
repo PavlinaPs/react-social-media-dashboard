@@ -1,0 +1,12 @@
+@use '../globals' as *;
+
+.attribution {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: underline;
+}
