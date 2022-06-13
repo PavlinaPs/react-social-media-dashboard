@@ -13,6 +13,7 @@
   --bg-top: hsl(232, 19%, 15%);
   --bg-card: hsl(228, 28%, 20%);
   --clr-small-text: hsl(228, 34%, 66%);
+  --clr-hr: hsla(228, 34%, 66%, 0.3);
   --clr-text: hsl(0, 0%, 100%);
   --clr-bs: hsla(256, 26%, 20%, 0.6);
 }
@@ -24,6 +25,7 @@
   --bg-top: hsl(0, 0%, 100%);
   --bg-card: hsl(227, 47%, 96%);
   --clr-small-text: hsl(228, 12%, 44%);
+  --clr-hr: hsla(228, 12%, 44%, 0.7);
   --clr-text: hsl(230, 17%, 14%);
 }
 
@@ -89,17 +91,17 @@ a {
 
 :root {
   --ff: "Inter", sans-serif;
+  --fs-h1-mobile: 2.4rem;
   --fs-subtitle-mobile: 1.4rem;
+  --fs-h1-desktop: 2.8rem;
   --fs-normal-mobile: 1.6rem;
   --fs-nav-mobile: 1.9rem;
-  --fs-h1-mobile: 4.8rem;
   --fs-h2-mobile: 3.8rem;
   --fs-h3-mobile: 2.8rem;
   --fs-button-mobile: 1.3rem;
   --fs-footer-mobile: 1.3rem;
   --fs-normal-desktop: 1.4rem;
   --fs-nav-desktop: 1.4rem;
-  --fs-h1-desktop: 7.1rem;
   --fs-h2-desktop: 5.5rem;
   --fs-footer-desktop: 1.35rem;
   --fw-regular: 400;
@@ -126,11 +128,32 @@ body {
   }
 }
 
-.Dashboard__Heading {
+.Heading {
   height: 23.5rem;
+  padding: 3.4rem 2.4rem 0;
   background-color: var(--bg-top);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  border: 1px solid yellowgreen;
+}
+@media (min-width: 65em) {
+  .Heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3.2rem 16rem 0;
+  }
+}
+
+.Heading__title {
+  font-size: var(--fs-h1-mobile);
+  font-weight: var(--fw-bold);
+  color: var(--clr-text);
+}
+@media (min-width: 65em) {
+  .Heading__title {
+    font-size: var(--fs-h1-desktop);
+  }
 }
 
 .Heading__text,
@@ -140,13 +163,42 @@ body {
   color: var(--clr-small-text);
 }
 
+.Heading__text {
+  margin-top: 0.4rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 0.1rem solid var(--clr-hr);
+}
+@media (min-width: 65em) {
+  .Heading__text {
+    padding-bottom: 0;
+    border-bottom: 0.1rem solid transparent;
+  }
+}
+
+.Heading__toggle--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+@media (min-width: 65em) {
+  .Heading__toggle--container {
+    margin-top: 1.2rem;
+  }
+}
+
+.Heading__toggle--label {
+  order: 0;
+}
 @media (min-width: 65em) {
   .Heading__toggle--label {
+    margin-right: 1.4rem;
     color: hsl(230deg, 22%, 74%);
   }
 }
 
 .Heading__toggle {
+  order: 1;
   position: relative;
   width: 4.8rem;
   height: 2.4rem;

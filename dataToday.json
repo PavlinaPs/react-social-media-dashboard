@@ -1,0 +1,60 @@
+{
+    "dataToday": [
+        {
+            "id": "11",
+            "category":"Page Views",
+            "icon": "url(./images/icon-facebook.svg)",
+            "followers":"87",
+            "percent":"3"
+        },
+        {
+            "id": "12",
+            "category":"Likes",
+            "icon": "url(./images/icon-facebook.svg)",
+            "followers":"52",
+            "percent":"2"
+        },
+        {
+            "id": "13",
+            "category":"Likes",
+            "icon": "url(./images/icon-instagram.svg)",
+            "followers":"5462",
+            "percent":"2257"
+        },
+        {
+            "id": "14",
+            "category":"Profile Views",
+            "icon": "url(./images/icon-instagram.svg)",
+            "followers":"52000",
+            "percent":"1375"
+        },
+        {
+            "id": "15",
+            "category":"Retweets",
+            "icon": "url(./images/icon-twitter.svg)",
+            "followers":"117",
+            "percent":"303"
+        },
+        {
+            "id": "16",
+            "category":"likes",
+            "icon": "url(./images/icon-twitter.svg)",
+            "followers":"507",
+            "percent":"553"
+        },
+        {
+            "id": "17",
+            "category":"Likes",
+            "icon": "url(./images/icon-youtube.svg)",
+            "followers":"107",
+            "percent":"19"
+        },
+        {
+            "id": "18",
+            "category":"Total Views",
+            "icon": "url(./images/icon-youtube.svg)",
+            "followers":"1407",
+            "percent":"12"
+        }
+    ]
+}

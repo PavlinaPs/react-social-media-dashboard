@@ -1,10 +1,30 @@
 @use '../globals/' as *;
 
-.Dashboard__Heading {
+.Heading {
     height: 23.5rem;
+    padding: 3.4rem 2.4rem 0;
     background-color: var(--bg-top);
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3.2rem 16rem 0;
+    }
+
+    border: 1px solid yellowgreen
+}
+
+.Heading__title {
+    font-size: var(--fs-h1-mobile);
+    font-weight: var(--fw-bold);
+    color: var(--clr-text);
+
+    @media (min-width: $desktop) {
+        font-size: var(--fs-h1-desktop);
+    }
 }
 
 .Heading__text,
@@ -14,13 +34,40 @@
     color: var(--clr-small-text);
 }
 
-.Heading__toggle--label {
+.Heading__text {
+    margin-top: 0.4rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 0.1rem solid var(--clr-hr);
+
     @media (min-width: $desktop) {
+        padding-bottom: 0;
+        border-bottom: 0.1rem solid transparent;
+    }
+}
+
+.Heading__toggle--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 1.2rem;
+    }
+}
+
+
+.Heading__toggle--label {
+    order: 0;
+
+    @media (min-width: $desktop) {
+        margin-right: 1.4rem;
         color: hsl(230, 22%, 74%);
     }
 }
 
 .Heading__toggle {
+    order: 1;
     position: relative;
     width: 4.8rem;
     height: 2.4rem;
