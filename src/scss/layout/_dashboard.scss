@@ -2,6 +2,15 @@
 
 .Dashboard__container {
     margin: -4.5rem 2.4rem 0;
+
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        //grid-template-columns: repeat(4, 25.5rem);
+        gap: 3rem;
+
+        margin: -10.7rem 16rem 0;
+    }
 }
 
 .Dashboard__block--border {
@@ -11,11 +20,17 @@
     max-width: 40rem;
     border-radius: 0.6rem 0.6rem 1rem 1rem;
 
-
+    @media (min-width: $desktop) {
+        width: 25.5rem;
+    }
 }
 
 .Dashboard__block--border:not(:first-child) {
     margin-top: 2.4rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+    }
 }
 
 .Dashboard__block {

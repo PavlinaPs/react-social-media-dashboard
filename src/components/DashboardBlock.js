@@ -14,7 +14,7 @@ const DashboardBlock = ({ border, icon, username, followers, description, today}
                 <img 
                     className="Dashboard__block--social-icon" 
                     src={require('../images' + icon)} 
-                    alt="facebook icon"  
+                    alt=""  
                 />
                 <p className="Dashboard__block--username">{username}</p>
             </div>
@@ -33,14 +33,8 @@ const DashboardBlock = ({ border, icon, username, followers, description, today}
                 <p 
                     className="Dashboard__block--today"
                     style={Number(today) >= 0 ? {color: "hsl(163, 72%, 41%)"} : {color: "hsl(356, 69%, 56%)"}}
-                >{Math.abs(today)}</p>
-                <p 
-                    className="Dashboard__block--today-description"
-                    style={Number(today) >= 0 ? {color: "hsl(163, 72%, 41%)"} : {color: "hsl(356, 69%, 56%)"}}
-                >Today</p>
-            </div>
-                
-            
+                >{Math.abs(today)} Today</p>
+            </div>     
         </div>
     </div>
   )
