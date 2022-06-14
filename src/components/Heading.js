@@ -12,6 +12,7 @@ const Heading = ({ lightModeOn, setLightModeOn, handleChangeTheme }) => {
             <div 
                 onClick={handleChangeTheme}
                 className="Heading__toggle"
+                aria-label="theme toggle"
             >
                 <div className={lightModeOn 
                     ? "Heading__toggle--dot-right" 

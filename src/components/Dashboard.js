@@ -1,8 +1,21 @@
-import React from 'react'
+import React from 'react';
+import dataAll from '../dataAll.json';
+import DashboardBlock from './DashboardBlock';
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div className="Dashboard__container">
+      {dataAll.dataAll.map(item => (
+        <DashboardBlock 
+          key={item.id} 
+          border={item.border}           
+          icon={item.icon}
+          username={item.username}
+          followers={item.followers}
+          today={item.today}
+        />
+      ))}
+    </div>
   )
 }
 

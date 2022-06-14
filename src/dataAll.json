@@ -2,28 +2,32 @@
     "dataAll": [
         {
             "id": "1",
-            "icon": "url(./images/icon-facebook.svg)",
+            "border": "hsl(208, 92%, 53%)",
+            "icon": "/icon-facebook.svg",
             "username":"@nathanf",
             "followers":"1987",
             "today":"12"
         },
         {
             "id": "2",
-            "icon": "url(./images/icon-twitter.svg)",
+            "border": "hsl(203, 89%, 53%)",
+            "icon": "/icon-twitter.svg",
             "username":"@nathanf",
             "followers":"1044",
             "today":"99"
         },
         {
             "id": "3",
-            "icon": "url(./images/icon-instagram.svg)",
+            "border": "linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))",
+            "icon": "/icon-instagram.svg",
             "username":"Nathan F.",
             "followers":"11000",
             "today":"1099"
         },
         {
             "id": "4",
-            "icon": "url(./images/icon-youtube.svg)",
+            "border": "hsl(348, 97%, 39%)",
+            "icon": "/icon-youtube.svg",
             "username":"Nathan F.",
             "followers":"8239",
             "today":"144"

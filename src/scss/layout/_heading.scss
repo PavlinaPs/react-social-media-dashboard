@@ -11,7 +11,8 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 3.2rem 16rem 0;
+        height: 24rem;
+        padding: 3rem 16rem 0;
     }
 
     border: 1px solid yellowgreen
@@ -55,7 +56,6 @@
         margin-top: 1.2rem;
     }
 }
-
 
 .Heading__toggle--label {
     order: 0;

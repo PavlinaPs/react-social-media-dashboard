@@ -86,7 +86,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) 
+- [React Component with JSON Image path](https://stackoverflow.com/questions/50115140/react-component-with-json-image-path) 
 - [Example resource 2](https://www.example.com)
 ## Author
 
