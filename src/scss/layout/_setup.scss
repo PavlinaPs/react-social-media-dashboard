@@ -4,15 +4,10 @@ body {
     @include flex-center;
     flex-direction: column;
     
-    //min-height: 100vh;
+    min-height: 100vh;
     font-family: var(--ff);
     font-weight: var(--fw-regular);
-    //font-size: var(--fs-normal-mobile);
     background-color: var(--bg-bottom);
-
-    @media (min-width: $desktop) {
-        //font-size: var(--fs-normal-desktop);
-    }
 }
 
 .App {
