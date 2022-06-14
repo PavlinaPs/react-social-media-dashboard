@@ -6,6 +6,7 @@
             "icon": "/icon-facebook.svg",
             "username":"@nathanf",
             "followers":"1987",
+            "description": "followers",
             "today":"12"
         },
         {
@@ -14,6 +15,7 @@
             "icon": "/icon-twitter.svg",
             "username":"@nathanf",
             "followers":"1044",
+            "description": "followers",
             "today":"99"
         },
         {
@@ -22,6 +24,7 @@
             "icon": "/icon-instagram.svg",
             "username":"Nathan F.",
             "followers":"11000",
+            "description": "followers",
             "today":"1099"
         },
         {
@@ -30,7 +33,8 @@
             "icon": "/icon-youtube.svg",
             "username":"Nathan F.",
             "followers":"8239",
-            "today":"144"
+            "description": "subscribers",
+            "today":"-144"
         }
     ]
 }

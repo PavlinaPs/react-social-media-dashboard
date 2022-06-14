@@ -87,7 +87,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [React Component with JSON Image path](https://stackoverflow.com/questions/50115140/react-component-with-json-image-path) 
-- [Example resource 2](https://www.example.com)
+- [Add Dark Mode in React js App and Website | React js Dark Mode With localStorage](https://www.youtube.com/watch?v=5zeuW802NLg)
+
 ## Author
 
 - GitHub - [PavlinaPs](https://github.com/PavlinaPs)

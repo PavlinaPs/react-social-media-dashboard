@@ -12,6 +12,7 @@ const Dashboard = () => {
           icon={item.icon}
           username={item.username}
           followers={item.followers}
+          description={item.description}
           today={item.today}
         />
       ))}

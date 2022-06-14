@@ -3,7 +3,7 @@ import arrowUp from "../images/icon-up.svg";
 import arrowDown from "../images/icon-down.svg";
 
 
-const DashboardBlock = ({ border, icon, username, followers, today}) => {
+const DashboardBlock = ({ border, icon, username, followers, description, today}) => {
   return (
     <div 
         className="Dashboard__block--border"
@@ -17,21 +17,30 @@ const DashboardBlock = ({ border, icon, username, followers, today}) => {
                     alt="facebook icon"  
                 />
                 <p className="Dashboard__block--username">{username}</p>
-                <p className="Dashboard__block--followers">
-                    {Number(followers) < 9999 ? followers : Math.floor(Number(followers) / 1000) + "k"}
-                </p>
-                <p className="Dashboard__block--description">followers</p>
-                <div className="Dashboard__block--today-container">
-                    <img 
-                        className="Dashboard__block--arrow" 
-                        src={Number(today) >= 0 ? arrowUp : arrowDown}
-                        alt={Number(today) >= 0 ? "green arrow up" : "red arrow down"}
-                    />
-                    <p className="Dashboard__block--today">{today}</p>
-                    <p className="Dashboard__block--today-description">Today</p>
-                </div>
-                
             </div>
+
+            <p className="Dashboard__block--followers">
+                {Number(followers) < 9999 ? followers : Math.floor(Number(followers) / 1000) + "k"}
+            </p>
+            <p className="Dashboard__block--description">{description}</p>
+
+            <div className="Dashboard__block--today-container">
+                <img 
+                    className="Dashboard__block--arrow" 
+                    src={Number(today) >= 0 ? arrowUp : arrowDown}
+                    alt={Number(today) >= 0 ? "green arrow up" : "red arrow down"}
+                />
+                <p 
+                    className="Dashboard__block--today"
+                    style={Number(today) >= 0 ? {color: "hsl(163, 72%, 41%)"} : {color: "hsl(356, 69%, 56%)"}}
+                >{Math.abs(today)}</p>
+                <p 
+                    className="Dashboard__block--today-description"
+                    style={Number(today) >= 0 ? {color: "hsl(163, 72%, 41%)"} : {color: "hsl(356, 69%, 56%)"}}
+                >Today</p>
+            </div>
+                
+            
         </div>
     </div>
   )
