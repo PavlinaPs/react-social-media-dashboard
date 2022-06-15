@@ -10,6 +10,7 @@ const Dashboard = () => {
           key={item.id} 
           border={item.border}           
           icon={item.icon}
+          social={item.social}
           username={item.username}
           followers={item.followers}
           description={item.description}

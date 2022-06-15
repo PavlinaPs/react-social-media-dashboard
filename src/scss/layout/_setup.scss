@@ -1,23 +1,22 @@
 @use '../globals' as *;
 
 body {
-    @include flex-center;
-    flex-direction: column;
-    
     min-height: 100vh;
     font-family: var(--ff);
     font-weight: var(--fw-regular);
     background-color: var(--bg-bottom);
+
+    @media (min-width: $desktop) {
+        @include flex-center;
+        flex-direction: column;
+    }
 }
 
 .App {
-    width: 37.5rem;
+    //width: 37.5rem;
     background-color: var(--bg-bottom);
 
-    border: 1px solid red;
-
     @media (min-width: $desktop) {
-        //max-width: 144rem;
-        width: 144rem;
+        max-width: 144rem;
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import arrowUp from "../images/icon-up.svg";
 import arrowDown from "../images/icon-down.svg";
 
-const TodayBlock = ({ description, icon, followers, percent }) => {
+const TodayBlock = ({ description, icon, social, followers, percent }) => {
   return (
     <div className='Today__block'>
         <div className='Today__block--container1'>
@@ -10,7 +10,7 @@ const TodayBlock = ({ description, icon, followers, percent }) => {
             <img 
                 className="Today__block--social-icon" 
                 src={require('../images' + icon)}
-                alt=""
+                alt={social}
             />
         </div>
 

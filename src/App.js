@@ -14,17 +14,14 @@ function App() {
     lightModeOn ? document.body.classList.add("lightTheme") : document.body.classList.remove("lightTheme");
   }, [lightModeOn]);
   
-  
   function handleChangeTheme() {
     setLightModeOn(!lightModeOn);
   }
 
   return (
-    //<div className={lightModeOn ? "App lightTheme" : "App"}>
     <div className="App">
       <Main 
         lightModeOn={lightModeOn}
-        setLightModeOn={setLightModeOn}
         handleChangeTheme={handleChangeTheme}
       />
       <Attribution />

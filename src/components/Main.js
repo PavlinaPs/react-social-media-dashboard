@@ -3,12 +3,11 @@ import Heading from './Heading';
 import Dashboard from './Dashboard';
 import Today from './Today';
 
-const Main = ({ lightModeOn, setLightModeOn, handleChangeTheme }) => {
+const Main = ({ lightModeOn, handleChangeTheme }) => {
   return (
     <main>
         <Heading 
           lightModeOn={lightModeOn}
-          setLightModeOn={setLightModeOn}
           handleChangeTheme={handleChangeTheme}
         />
         <Dashboard />

@@ -3,7 +3,7 @@ import arrowUp from "../images/icon-up.svg";
 import arrowDown from "../images/icon-down.svg";
 
 
-const DashboardBlock = ({ border, icon, username, followers, description, today}) => {
+const DashboardBlock = ({ border, icon, social, username, followers, description, today}) => {
   return (
     <div 
         className="Dashboard__block--border"
@@ -14,7 +14,7 @@ const DashboardBlock = ({ border, icon, username, followers, description, today}
                 <img 
                     className="Dashboard__block--social-icon" 
                     src={require('../images' + icon)} 
-                    alt=""  
+                    alt={social} 
                 />
                 <p className="Dashboard__block--username">{username}</p>
             </div>

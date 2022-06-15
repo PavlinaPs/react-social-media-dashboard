@@ -14,23 +14,21 @@
         height: 24rem;
         padding: 3rem 16rem 0;
     }
-
-    border: 1px solid yellowgreen
 }
 
 .Heading__title {
-    font-size: var(--fs-h1-mobile);
+    font-size: var(--fs-title);
     font-weight: var(--fw-bold);
     color: var(--clr-text);
 
     @media (min-width: $desktop) {
-        font-size: var(--fs-h1-desktop);
+        font-size: var(--fs-title);
     }
 }
 
 .Heading__text,
 .Heading__toggle--label {
-    font-size: var(--fs-subtitle-mobile);
+    font-size: var(--fs-subtitle);
     font-weight: var(--fw-bold);
     color: var(--clr-small-text);
 }
@@ -101,7 +99,7 @@ body.lightTheme .Heading__toggle:hover {
 }
 
 .Heading__toggle:hover~.Heading__toggle--label {
-    color: hsl(0, 0%, 100%);;
+    color: hsl(0, 0%, 100%);
 } 
 
 body.lightTheme .Heading__toggle:hover~.Heading__toggle--label {

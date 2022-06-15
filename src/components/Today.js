@@ -12,6 +12,7 @@ const Today = () => {
             key={item.id}
             description={item.description}
             icon={item.icon}
+            social={item.social}
             followers={item.followers}
             percent={item.percent}
           />

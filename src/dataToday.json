@@ -4,6 +4,7 @@
             "id": "11",
             "description":"Page Views",
             "icon": "/icon-facebook.svg",
+            "social": "Facebook",
             "followers":"87",
             "percent":"3"
         },
@@ -11,6 +12,7 @@
             "id": "12",
             "description":"Likes",
             "icon": "/icon-facebook.svg",
+            "social": "Facebook",
             "followers":"52",
             "percent":"-2"
         },
@@ -18,6 +20,7 @@
             "id": "13",
             "description":"Likes",
             "icon": "/icon-instagram.svg",
+            "social": "Instagram",
             "followers":"5462",
             "percent":"2257"
         },
@@ -25,6 +28,7 @@
             "id": "14",
             "description":"Profile Views",
             "icon": "/icon-instagram.svg",
+            "social": "Instagram",
             "followers":"52000",
             "percent":"1375"
         },
@@ -32,13 +36,15 @@
             "id": "15",
             "description":"Retweets",
             "icon": "/icon-twitter.svg",
+            "social": "Twitter",
             "followers":"117",
             "percent":"303"
         },
         {
             "id": "16",
-            "description":"likes",
+            "description":"Likes",
             "icon": "/icon-twitter.svg",
+            "social": "Twitter",
             "followers":"507",
             "percent":"553"
         },
@@ -46,6 +52,7 @@
             "id": "17",
             "description":"Likes",
             "icon": "/icon-youtube.svg",
+            "social": "YouTube",
             "followers":"107",
             "percent":"-19"
         },
@@ -53,6 +60,7 @@
             "id": "18",
             "description":"Total Views",
             "icon": "/icon-youtube.svg",
+            "social": "YouTube",
             "followers":"1407",
             "percent":"-12"
         }

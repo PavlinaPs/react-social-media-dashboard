@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Heading = ({ lightModeOn, setLightModeOn, handleChangeTheme }) => {
+const Heading = ({ lightModeOn, handleChangeTheme }) => {
 
   return (
     <header className="Heading">
