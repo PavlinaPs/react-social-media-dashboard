@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/PavlinaPs/react-social-media-dashboard
+- Live Site URL: https://pavlinaps.github.io/react-social-media-dashboard/
 
 ## My process
 
